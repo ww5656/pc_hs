@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+@media (max-width:768px){
+    //头部部分
+    .header{
+        height: 60px;
+        .header-c{
+            width: 100%;
+            .logo{
+                width: 100px;
+                margin-left: 20px;
+                background-size: 100%;
+            }
+            .nav{
+                display: none;
+            }
+            .nav-m{
+                display: none;
+                width: 100%;
+                right: 0px;
+                top: 60px;
+                height: auto;
+                .li-item{
+                    float: none;
+                    height: 40px;
+                    width: 100%;
+                    margin: 0;
+                    line-height: 40px;
+                    background-color: #fff;
+                    .active{
+                        color:#b9ab77 ;
+                    }
+                    a:hover{
+                        color:#b9ab77 ;
+                    }
+                    a::after{
+                        display: none;
+                    }
+                    .active::after{
+                        display: none;
+                    }
+                    a:hover::after{
+                        display: none;
+                    }
+                }
+            }
+            .switch{
+                display: block;
+            }
+        }
+    }
+    //广告部分
+    .banner{
+        margin-top: 60px;
+    }
+    //内容部分
+    .content{
+        margin-top: 60px;
+        .content-c{
+    
+            width: 100%;
+            .brand{
+                width: 100%;
+                .title{
+                    height: 80px;
+
+                    .title-c{
+                        font-size: 20px;
+                    }
+                    .title-e{
+                        font-size: 14px;
+                    }
+                }
+                .brand-t{
+                    .img{
+                        width: 100%;
+                       
+                    }
+                    .text{
+                        position: static;
+                        width: 100%;
+                       
+                    }
+                }
+                
+            }
+            .contact{
+                padding-bottom: 20px;
+                .title{
+                    height: 80px;
+                    .title-c{
+                        font-size: 20px;
+                    }
+                    .title-e{
+                        color: #c1c1c1;
+                        font-size: 14px;
+                    }
+                }
+                .address{
+                    .img{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    h2{
+                        text-align: center;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        font-size: 22px;
+                    }
+                    p{
+                        text-indent: 2em;
+                    }
+                }
+                .map{
+                    margin-top: 30px;
+                    position: relative;
+                    width: 100%;
+                    #allmap{
+                        width: 100%;
+                        height: 260px;
+                    }
+                    .tel{
+                        position: static;
+                        width: 100%;
+                        right: 0;
+                        top: 0;
+                        p:nth-child(1){
+                            padding-top: 20px;
+                        }
+                        p{
+                            font-size: 16px;
+                            color: #616060;
+                            line-height: 25px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //底部部分
+    .footer{
+        .footer-c{
+            width: 100%;
+            font-size: 12px;
+            overflow: hidden;
+            text-align: center;
+            .left{
+                height: auto;
+                
+                p:nth-child(1){
+                    margin: 15px 0;
+                }
+                p:nth-child(2){
+                    margin: 15px 0;
+                }
+    
+    
+            }
+            .right{
+                position: relative;
+                margin: 0 auto;
+                height: auto;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                li{
+                    float: left;
+                    height: auto;
+                    line-height: 20px;
+                    margin-left: 10px;
+                }
+            }
+            .goTop{
+                right: 30px;
+    
+            }
+        }
+    }
+}

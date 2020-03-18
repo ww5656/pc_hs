@@ -1,0 +1,354 @@
+@charset "utf-8";
+//头部部分
+.header{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    .header-c{
+        position: relative;
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        .logo{
+            display: block;
+            width: 186px;
+            height: 100%;
+            background: url(../../../static/imgs/logo.png) no-repeat center;
+            margin-left: 60px;
+        }
+        .nav{
+            display: block;
+            position: absolute;
+            top:0;
+            right: 60px;
+            height: 100%;
+            .li-item{
+                float: left;
+                height: 100%;
+                width: 110px;
+                margin-left: 20px;
+                text-align: center;
+                line-height: 80px;
+                a{
+                    position: relative;
+                    text-decoration: none;
+                    color: #666666;
+                }
+                a:hover{
+                    color: #1d1d1d;
+                }
+                a::after{
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    background-color: #b9ab77;
+                    display: none;
+                }
+                .active::after{
+                    display: block;
+                }
+                a:hover::after{
+                    display: block;
+                }
+            }
+           
+        }
+        .nav-m{
+            display: none;
+            position: absolute;
+            top:0;
+            right: 60px;
+            height: 100%;
+
+            .li-item{
+                float: left;
+                height: 100%;
+                width: 110px;
+                margin-left: 20px;
+                text-align: center;
+                line-height: 80px;
+                a{
+                    position: relative;
+                    text-decoration: none;
+                    color: #666666;
+                }
+                a:hover{
+                    color: #1d1d1d;
+                }
+                a::after{
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    background-color: #b9ab77;
+                    display: none;
+                }
+                .active::after{
+                    display: block;
+                }
+                a:hover::after{
+                    display: block;
+                }
+            }
+           
+        }
+        .switch{
+            display: none;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            width: 30px;
+            height: 30px;
+            .icon{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                transition: all 0.3s linear;
+
+                .line{
+                    display: block;
+                    width: 30px;
+                    height: 2px;
+                    background-color: #000;
+                    transition: all 0.3s linear;
+                }
+            }
+         
+        }
+    }
+}
+//广告部分
+.banner{
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+    .banner-2{
+        width: 100%;
+        animation: alternates-reverse 10s ease-in-out infinite;
+        img{
+            width: 100%;
+        }
+    }
+    .banner-1{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        animation: alternates 10s ease-in-out infinite ;
+
+        img{
+            width: 100%;
+          }
+    }
+    
+    
+}
+@keyframes alternates {
+    0% {
+      opacity: 0; }
+    20% {
+      opacity: 0; }
+    30% {
+      z-index: 1;
+      opacity: 1; }
+    70% {
+      opacity: 1; }
+    80% {
+      opacity: 0; }
+    100% {
+      opacity: 0; } }
+  @keyframes alternates-reverse {
+    0% {
+      opacity: 1; }
+    20% {
+      opacity: 1; }
+    30% {
+      opacity: 0; }
+    70% {
+      opacity: 0; }
+    80% {
+      opacity: 1; }
+    100% {
+      opacity: 1; } }
+//设计师
+.designers{
+    width: 100%;
+    .designers-c{
+        width: 1200px;
+        margin: 0 auto;
+        .title{
+            padding-top: 100px;
+            text-align: center;
+            .title-c{
+                color: #444444;
+                font-size: 26px;
+                padding-bottom: 8px;
+            }
+            .title-e{
+                color: #c1c1c1;
+                font-size: 16px;
+            }
+        }
+        .designers-list{
+            width: 100%;
+            height: 750px;
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+
+            li{
+                width: 300px;
+                .avatar{
+                    width: 100%;
+                    height: 450px;
+                    background: url(../imgs/avatar-1.jpg) no-repeat center;
+                    margin: 0 auto;
+                }
+                .name{
+                    margin-top: 25px;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    color: #2e2e2e;
+                    text-align: center;
+
+                }
+                .position{
+                    font-size: 12px;
+                    color: #b9b9b9;
+                    text-align: center; 
+
+                }
+                .info{
+                    margin: 20px  auto  50px  auto;
+                    font-size: 12px;
+                    color: #b9b9b9;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    width:277px
+                    
+                }
+                a{
+                    display: block;
+                    text-decoration: none;
+                    line-height: 50px;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #bbbaba;
+                    width: 150px;
+                    height: 50px;
+                    border: 1px solid #bbbaba;
+                    margin:0 auto ;
+                }
+                span{
+                    margin-top: 30px;
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #bbbaba;
+                }
+                a:hover{
+                    color: #b9ab77;
+                    border: 1px solid #b9ab77;
+
+                }
+                a:hover + span{
+                    background-color: #b9ab77;
+
+                }
+
+              
+            }
+            li:nth-child(2) .avatar{
+                background: url(../imgs/avatar-2.jpg) no-repeat center;
+
+            }
+            li:nth-child(3) .avatar{
+                background: url(../imgs/avatar-3.jpg) no-repeat center;
+
+            }
+        }
+    }
+
+}
+
+//底部部分
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #4d4d4d;
+    .footer-c{
+        position: relative;
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 12px;
+        color: #fff;
+        overflow: hidden;
+        .left{
+            height: 100%;
+            
+            p:nth-child(1){
+                margin: 40px 0 13px;
+            }
+            p:nth-child(2){
+                margin: 13px 0 18px;
+            }
+
+
+        }
+        .right{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            li{
+                float: left;
+                height: 100%;
+                line-height: 100px;
+                margin-left: 58px;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+
+                }
+            }
+        }
+        .goTop{
+            display: none;
+            position: fixed;
+            right: 252px;
+            bottom: 100px;
+            width: 50px;
+            height: 10px;
+
+          
+            .arrow{
+                display: block;
+                width: 48px;
+                height: 48px;
+                border: 1px solid #ccc;
+                background: #E8E8E8 url(../../../static/imgs/toup-icon.png) no-repeat center;
+            }
+            .tel{
+                display: block;
+                width: 48px;
+                height: 48px;
+                border: 1px solid #ccc;
+                border-top: none;
+                background:  #E8E8E8 url(../../../static/imgs/phone-icon.png) no-repeat center;
+            }
+        }
+    }
+}

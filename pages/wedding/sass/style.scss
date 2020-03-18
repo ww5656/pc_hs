@@ -1,0 +1,394 @@
+@charset "utf-8";
+//头部部分
+.header{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    .header-c{
+        position: relative;
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        .logo{
+            display: block;
+            width: 186px;
+            height: 100%;
+            background: url(../../../static/imgs/logo.png) no-repeat center;
+            margin-left: 60px;
+        }
+        .nav{
+            display: block;
+            position: absolute;
+            top:0;
+            right: 60px;
+            height: 100%;
+            .li-item{
+                float: left;
+                height: 100%;
+                width: 110px;
+                margin-left: 20px;
+                text-align: center;
+                line-height: 80px;
+                a{
+                    position: relative;
+                    text-decoration: none;
+                    color: #666666;
+                }
+                a:hover{
+                    color: #1d1d1d;
+                }
+                a::after{
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    background-color: #b9ab77;
+                    display: none;
+                }
+                .active::after{
+                    display: block;
+                }
+                a:hover::after{
+                    display: block;
+                }
+            }
+           
+        }
+        .nav-m{
+            display: none;
+            position: absolute;
+            top:0;
+            right: 60px;
+            height: 100%;
+
+            .li-item{
+                float: left;
+                height: 100%;
+                width: 110px;
+                margin-left: 20px;
+                text-align: center;
+                line-height: 80px;
+                a{
+                    position: relative;
+                    text-decoration: none;
+                    color: #666666;
+                }
+                a:hover{
+                    color: #1d1d1d;
+                }
+                a::after{
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    background-color: #b9ab77;
+                    display: none;
+                }
+                .active::after{
+                    display: block;
+                }
+                a:hover::after{
+                    display: block;
+                }
+            }
+           
+        }
+        .switch{
+            display: none;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            width: 30px;
+            height: 30px;
+            .icon{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                transition: all 0.3s linear;
+
+                .line{
+                    display: block;
+                    width: 30px;
+                    height: 2px;
+                    background-color: #000;
+                    transition: all 0.3s linear;
+                }
+            }
+         
+        }
+    }
+}
+//内容部分
+.content{
+    margin-top: 180px;
+    width: 100%;
+    .content-c{
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        .content-top{
+            width: 100%;
+            .wedding-img{
+                width: 60%;
+            }
+            .wedding-text{
+                position: absolute;
+                right: 60px;
+                top: 0;
+                width: 30%;
+                h2{
+                    font-size: 30px;
+                    color: #2a2a2a;
+                    margin: 20px 0px 5px 20px;
+                }
+                h2::before{
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    width: 2px;
+                    height: 70px;
+                    background-color: #000;
+                }
+                h4{
+                    font-size: 16px;
+                    color: #4c4c4c;
+                    margin-left: 140px;
+                    margin-bottom: 25px;
+                }
+                p{
+                    font-size: 14px;
+                    color: #cacaca;
+                    line-height: 20px;
+                }
+                p:nth-child(3){
+                    margin-left: 150px;
+                }
+                p:nth-child(4){
+                    margin-left: 95px;
+                    margin-bottom: 15px;
+                }
+                p:nth-child(5){
+                    margin-left: 15px;
+                }
+                a{
+                    display: block;
+                    width: 148px;
+                    height: 38px;
+                    border: 1px solid #f5f5f5;
+                    text-align: center;
+                    line-height: 38px;
+                    text-decoration: none;
+                    margin: 60px auto;
+                    color: #ccc;
+
+                }
+                a:hover{
+                    background-color: #b9ab77;
+                    color: #fff;
+                }
+            }
+
+        }
+        .content-bot{
+            width: 100%;
+            margin-top: 50px;
+            .wedding-img2{
+                width: 60%;
+                img{
+                    width: 100%;
+                }
+            }
+            .wedding-text{
+                width: 60%;
+                p:nth-child(1){
+                    font-size: 14px;
+                    color: #6a6a6a;
+                    margin-top: 60px;
+                    margin-bottom: 40px;
+                    line-height: 20px;
+                }
+                p:nth-child(2){
+                    font-size: 16px;
+                    color: #6a6a6a;
+                    line-height: 25px;
+                }
+                p:nth-child(3){
+                    font-size: 16px;
+                    color: #6a6a6a;
+                    line-height: 25px;
+                    padding-bottom:60px;
+
+                }
+
+            }
+        }
+    }
+}
+// 广告部分
+.banner{
+    width: 100%;
+    height: 555px;
+    background-color: #dddddd;
+    .banner-c{
+        height: 555px;
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        .banner-title{
+            padding-top: 100px;
+            font-size: 12px;
+            color: #929292;
+            height: 70px;
+            .new{
+                width: 75px;
+                height: 30px;
+                background-color: #f7f5f5;
+                float: left;
+                text-align: center;
+                line-height: 30px;
+                text-decoration: none;
+                color: #bbbaba;
+                border: 1px solid #f7f5f5;
+
+
+            }
+            .new:hover{
+                order: 1px solid #b9ab77;
+                color: #b9ab77;
+            }
+            .old{
+                text-decoration: none;
+                color: #bbbaba;
+                border: 1px solid #f7f5f5;
+                width: 40px;
+                height: 30px;
+                float: left;
+                margin-left: 40px;
+                text-align: center;
+                line-height: 30px;
+                background-color: #f7f5f5;
+
+            }
+            .old:hover{
+                order: 1px solid #b9ab77;
+                color: #b9ab77;
+            }
+        }
+        .swiper-container{
+            position: static;
+            .swiper-slide{
+                width:300px;
+                width:auto;
+                margin: 0px 20px;
+              }
+            .swiper-button-prev{
+                left: -50px;
+                background-color: #cacaca;
+                width: 32px;
+                height: 50px;
+            }
+            .swiper-button-next{
+                right: -20px;         
+                background-color: #cacaca;
+                width: 32px;
+                height: 50px;
+            }
+        }
+        .more{
+            display: block;
+            width: 150px;
+            height: 45px;
+            border: 1px solid #bbbaba;
+            text-align: center;
+            line-height: 45px;
+            margin: 60px auto;
+            text-decoration: none;
+            color: #bbbaba;
+        }
+        .more:hover{
+            border: 1px solid #b9ab77;
+            color: #b9ab77;
+            
+        }
+    }
+}
+//底部部分
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #4d4d4d;
+    .footer-c{
+        position: relative;
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 12px;
+        color: #fff;
+        overflow: hidden;
+        .left{
+            height: 100%;
+            
+            p:nth-child(1){
+                margin: 40px 0 13px;
+            }
+            p:nth-child(2){
+                margin: 13px 0 18px;
+            }
+
+
+        }
+        .right{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            li{
+                float: left;
+                height: 100%;
+                line-height: 100px;
+                margin-left: 58px;
+                a{
+                    text-decoration: none;
+                     color: #fff;
+
+                }
+            }
+        }
+        .goTop{
+            display: none;
+            position: fixed;
+            right: 252px;
+            bottom: 100px;
+            width: 50px;
+            height: 10px;
+
+          
+            .arrow{
+                display: block;
+                width: 48px;
+                height: 48px;
+                border: 1px solid #ccc;
+                background: #E8E8E8 url(../../../static/imgs/toup-icon.png) no-repeat center;
+            }
+            .tel{
+                display: block;
+                width: 48px;
+                height: 48px;
+                border: 1px solid #ccc;
+                border-top: none;
+                background:  #E8E8E8 url(../../../static/imgs/phone-icon.png) no-repeat center;
+            }
+        }
+    }
+}

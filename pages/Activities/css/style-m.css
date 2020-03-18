@@ -1,0 +1,190 @@
+@media (max-width: 768px) {
+  .header {
+    height: 60px; }
+    .header .header-c {
+      width: 100%; }
+      .header .header-c .logo {
+        width: 100px;
+        margin-left: 20px;
+        background-size: 100%; }
+      .header .header-c .nav {
+        display: none; }
+      .header .header-c .nav-m {
+        display: none;
+        width: 100%;
+        right: 0px;
+        top: 60px;
+        height: auto; }
+        .header .header-c .nav-m .li-item {
+          float: none;
+          height: 40px;
+          width: 100%;
+          margin: 0;
+          line-height: 40px;
+          background-color: #fff; }
+          .header .header-c .nav-m .li-item .active {
+            color: #b9ab77; }
+          .header .header-c .nav-m .li-item a:hover {
+            color: #b9ab77; }
+          .header .header-c .nav-m .li-item a::after {
+            display: none; }
+          .header .header-c .nav-m .li-item .active::after {
+            display: none; }
+          .header .header-c .nav-m .li-item a:hover::after {
+            display: none; }
+      .header .header-c .switch {
+        display: block; }
+        @keyframes left {
+          0% {
+              transform: translate3d(3000px, 0, 0);
+              opacity: 0;
+              transform: translate3d(3000px, 0, 0);
+          }
+  
+          60% {
+              transform: translate3d(-25px, 0, 0);
+              opacity: 1;
+              transform: translate3d(-25px, 0, 0);
+          }
+  
+          75% {
+              transform: translate3d(10px, 0, 0);
+              transform: translate3d(10px, 0, 0);
+          }
+  
+          90% {
+              transform: translate3d(-5px, 0, 0);
+              transform: translate3d(-5px, 0, 0);
+          }
+  
+          100% {
+              transform: translateZ(0);
+              transform: translateZ(0);
+          }
+  
+      }
+  
+      @keyframes right {
+          20% {
+              transform: translate3d(-20px, 0, 0);
+              opacity: 1;
+              transform: translate3d(-20px, 0, 0);
+          }
+  
+          100% {
+              opacity: 0;
+              transform: translate3d(2000px, 0, 0);
+          }
+  
+      }
+  
+
+  .banner {
+    margin-top: 60px; }
+
+  .content {
+    width: 100%;
+    margin-top: 50px; }
+    .content .title {
+      text-align: center;
+      height: 105px; }
+      .content .title .title-c {
+        color: #444444;
+        font-size: 26px;
+        padding-bottom: 8px; }
+      .content .title .title-e {
+        color: #c1c1c1;
+        font-size: 16px; }
+    .content .swiper-container .swiper-wrapper {
+      margin-bottom: 120px; }
+      .content .swiper-container .swiper-wrapper .swiper-slide ul {
+        width: 100%;
+        height: 600px; }
+        .content .swiper-container .swiper-wrapper .swiper-slide ul li {
+          width: 100%;
+          height: 200px;
+          border-bottom: 1px solid #ccc; }
+          .content .swiper-container .swiper-wrapper .swiper-slide ul li .details-text {
+            position: relative;
+            padding-top: 50px;
+            width: 710px;
+            margin: 0 auto;
+            height: 200px;
+            color: #929292; }
+            .content .swiper-container .swiper-wrapper .swiper-slide ul li .details-text .date {
+              float: left; }
+              .content .swiper-container .swiper-wrapper .swiper-slide ul li .details-text .date h3 {
+                font-size: 60px; }
+              .content .swiper-container .swiper-wrapper .swiper-slide ul li .details-text .date p {
+                font-size: 16px;
+                margin-top: 5px;
+                text-align: right; }
+            .content .swiper-container .swiper-wrapper .swiper-slide ul li .details-text .text {
+              float: left;
+              margin-left: 20px; }
+              .content .swiper-container .swiper-wrapper .swiper-slide ul li .details-text .text h3 {
+                color: #000; }
+              .content .swiper-container .swiper-wrapper .swiper-slide ul li .details-text .text p {
+                margin-top: 25px;
+                font-size: 12px;
+                line-height: 22px; }
+            .content .swiper-container .swiper-wrapper .swiper-slide ul li .details-text .right-arr {
+              width: 30px;
+              height: 40px;
+              position: absolute;
+              right: 0;
+              top: 50%;
+              margin-top: -45px;
+              background: url(../imgs/right-arr.png) no-repeat center;
+              background-size: contain; }
+        .content .swiper-container .swiper-wrapper .swiper-slide ul li:hover {
+          background-color: #444444; }
+        .content .swiper-container .swiper-wrapper .swiper-slide ul li:hover .details-text {
+          transform: translate(-100px, 0);
+          transition: all 0.6s ease-in-out;
+          color: #fff; }
+        .content .swiper-container .swiper-wrapper .swiper-slide ul li:hover .details-text > .text > h3 {
+          color: #fff; }
+    .content .swiper-container .swiper-pagination {
+      height: 60px; }
+      .content .swiper-container .swiper-pagination .swiper-pagination-bullet {
+        width: 30px;
+        height: 30px;
+        border-radius: 0%;
+        text-align: center;
+        line-height: 30px;
+        background-color: #ffffff;
+        color: #d0d0d0;
+        border: 1px solid #d0d0d0; }
+      .content .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: #6d6d6d;
+        color: #fefefe; }
+
+  .footer .footer-c {
+    width: 100%;
+    font-size: 12px;
+    color: #fff;
+    overflow: hidden;
+    text-align: center; }
+    .footer .footer-c .left {
+      height: auto; }
+      .footer .footer-c .left p:nth-child(1) {
+        margin: 15px 0; }
+      .footer .footer-c .left p:nth-child(2) {
+        margin: 15px 0; }
+    .footer .footer-c .right {
+      position: relative;
+      margin: 0 auto;
+      height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .footer .footer-c .right li {
+        float: left;
+        height: auto;
+        line-height: 20px;
+        margin-left: 10px; }
+    .footer .footer-c .goTop {
+      right: 30px; } }
+
+/*# sourceMappingURL=style-m.css.map */

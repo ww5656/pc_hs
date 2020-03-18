@@ -1,0 +1,247 @@
+@media (max-width: 768px) {
+  .header {
+    height: 60px; }
+    .header .header-c {
+      width: 100%; }
+      .header .header-c .logo {
+        width: 100px;
+        margin-left: 20px;
+        background-size: 100%; }
+      .header .header-c .nav {
+        display: none; }
+      .header .header-c .nav-m {
+        display: none;
+        width: 100%;
+        right: 0px;
+        top: 60px;
+        height: auto; }
+        .header .header-c .nav-m .li-item {
+          float: none;
+          height: 40px;
+          width: 100%;
+          margin: 0;
+          line-height: 40px;
+          background-color: #fff; }
+          .header .header-c .nav-m .li-item .active {
+            color: #b9ab77; }
+          .header .header-c .nav-m .li-item a:hover {
+            color: #b9ab77; }
+          .header .header-c .nav-m .li-item a::after {
+            display: none; }
+          .header .header-c .nav-m .li-item .active::after {
+            display: none; }
+          .header .header-c .nav-m .li-item a:hover::after {
+            display: none; }
+      .header .header-c .switch {
+        display: block; }
+        @keyframes left {
+          0% {
+              transform: translate3d(3000px, 0, 0);
+              opacity: 0;
+          }
+  
+          60% {
+              transform: translate3d(-25px, 0, 0);
+              opacity: 1;
+          }
+  
+          75% {
+              transform: translate3d(10px, 0, 0);
+          }
+  
+          90% {
+              transform: translate3d(-5px, 0, 0);
+          }
+  
+          100% {
+              transform: translateZ(0);
+          }
+  
+      }
+  
+      @keyframes right {
+          20% {
+              transform: translate3d(-20px, 0, 0);
+              opacity: 1;
+          }
+  
+          100% {
+              opacity: 0;
+              transform: translate3d(2000px, 0, 0);
+          }
+  
+      }
+  
+
+  .swiper-container {
+    height: auto;
+    margin-top: 60px; }
+    .swiper-container .swiper-wrapper {
+      width: 100%;
+      height: auto; }
+      .swiper-container .swiper-wrapper .swiper-slide {
+        height: auto; }
+        .swiper-container .swiper-wrapper .swiper-slide img {
+          width: 100%; }
+    .swiper-container .swiper-button-next,
+    .swiper-container .swiper-button-prev {
+      display: none; }
+
+  .content .wedding {
+    margin-top: 60px; }
+    .content .wedding .wedding-c {
+      width: 100%; }
+      .content .wedding .wedding-c .title {
+        text-align: center; }
+        .content .wedding .wedding-c .title .title-c {
+          font-size: 20px; }
+        .content .wedding .wedding-c .title .title-e {
+          font-size: 12px; }
+      .content .wedding .wedding-c .weddingSwiper.swiper-container {
+        height: auto; }
+        .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide ul {
+          height: auto; }
+          .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide ul .item {
+            width: 48%;
+            height: 48%;
+            margin-right: 2%;
+            margin-bottom: 2%; }
+            .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide ul .item img {
+              filter: grayscale(0%); }
+            .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide ul .item .mask {
+              opacity: 0; }
+          .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide ul .item:hover > .mask {
+            opacity: 0; }
+      .content .wedding .wedding-c .weddingPagination {
+        display: flex;
+        justify-content: space-around; }
+      .content .wedding .wedding-c .more {
+        padding-top: 40px;
+        padding-bottom: 20px; }
+  .content .jewelry .jewelry-c {
+    width: 100%; }
+    .content .jewelry .jewelry-c .title {
+      padding-top: 50px; }
+      .content .jewelry .jewelry-c .title .title-c {
+        font-size: 20px; }
+      .content .jewelry .jewelry-c .title .title-e {
+        font-size: 12px; }
+    .content .jewelry .jewelry-c .jewelryImgs {
+      margin-top: 40px;
+      flex-direction: column; }
+      .content .jewelry .jewelry-c .jewelryImgs .item {
+        width: 70%;
+        margin: 10px auto; }
+        .content .jewelry .jewelry-c .jewelryImgs .item .item-text {
+          opacity: 1;
+          height: 30%; }
+        .content .jewelry .jewelry-c .jewelryImgs .item img {
+          width: 100%; }
+    .content .jewelry .jewelry-c .more {
+      padding-top: 30px;
+      padding-bottom: 20px; }
+  .content .activity {
+    background: url(../imgs/activities-bg.jpg) no-repeat center; }
+    .content .activity .activity-c {
+      width: 100%; }
+      .content .activity .activity-c .title {
+        padding-top: 50px; }
+        .content .activity .activity-c .title .title-c {
+          font-size: 20px; }
+        .content .activity .activity-c .title .title-e {
+          font-size: 12px; }
+      .content .activity .activity-c .activity-list {
+        margin-top: 60px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column; }
+        .content .activity .activity-c .activity-list li {
+          width: 50%;
+          height: auto;
+          position: relative; }
+          .content .activity .activity-c .activity-list li img {
+            width: 100%;
+            height: 100%; }
+          .content .activity .activity-c .activity-list li .info {
+            opacity: 1;
+            left: 100%;
+            width: 100%;
+            height: 100%; }
+            .content .activity .activity-c .activity-list li .info h3 {
+              margin: 10px 10px;
+              font-size: 20px; }
+              .content .activity .activity-c .activity-list li .info h3 font {
+                font-size: 14px; }
+            .content .activity .activity-c .activity-list li .info h4 {
+              margin-left: 10px;
+              font-size: 16px;
+              color: #000;
+              font-weight: bolder; }
+            .content .activity .activity-c .activity-list li .info p {
+              margin: 10px 0px 10px 10px;
+              font-size: 13px;
+              height: 30px;
+              width: 210px; }
+            .content .activity .activity-c .activity-list li .info a {
+              margin-left: 40px;
+              text-decoration: none; }
+          .content .activity .activity-c .activity-list li .info:hover {
+            opacity: 1;
+            width: 100%;
+            height: 100%; }
+      .content .activity .activity-c .more {
+        padding-top: 30px;
+        padding-bottom: 20px; }
+  .content .designers {
+    width: 100%;
+    height: auto;
+    background-color: #3d3d3d; }
+    .content .designers .designers-c {
+      width: 100%;
+      margin: 0 auto;
+      height: auto; }
+      .content .designers .designers-c .title {
+        padding-top: 60px; }
+        .content .designers .designers-c .title .title-c {
+          font-size: 20px; }
+        .content .designers .designers-c .title .title-e {
+          font-size: 12px; }
+      .content .designers .designers-c .designers-list {
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column; }
+        .content .designers .designers-c .designers-list li {
+          width: 100%;
+          margin-bottom: 20px; }
+
+  .footer .footer-c {
+    width: 100%;
+    font-size: 12px;
+    color: #323232;
+    overflow: hidden;
+    text-align: center; }
+    .footer .footer-c .left {
+      height: auto; }
+      .footer .footer-c .left p:nth-child(1) {
+        margin: 15px 0; }
+      .footer .footer-c .left p:nth-child(2) {
+        margin: 15px 0; }
+    .footer .footer-c .right {
+      position: relative;
+      margin: 0 auto;
+      height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .footer .footer-c .right li {
+        float: left;
+        height: auto;
+        line-height: 20px;
+        margin-left: 10px; }
+    .footer .footer-c .goTop {
+      right: 30px; } }
+
+/*# sourceMappingURL=style-m.css.map */

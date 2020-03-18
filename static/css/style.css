@@ -1,0 +1,515 @@
+.header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); }
+  .header .header-c {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto; }
+    .header .header-c .logo {
+      display: block;
+      width: 186px;
+      height: 100%;
+      background: url(../imgs/logo.png) no-repeat center;
+      margin-left: 60px; }
+    .header .header-c .nav {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 60px;
+      height: 100%; }
+      .header .header-c .nav .li-item {
+        float: left;
+        height: 100%;
+        width: 110px;
+        margin-left: 20px;
+        text-align: center;
+        line-height: 80px; }
+        .header .header-c .nav .li-item a {
+          position: relative;
+          text-decoration: none;
+          color: #666666; }
+        .header .header-c .nav .li-item a:hover {
+          color: #1d1d1d; }
+        .header .header-c .nav .li-item a::after {
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          content: "";
+          width: 100%;
+          height: 2px;
+          background-color: #b9ab77;
+          display: none; }
+        .header .header-c .nav .li-item .active::after {
+          display: block; }
+        .header .header-c .nav .li-item a:hover::after {
+          display: block; }
+    .header .header-c .nav-m {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 60px;
+      height: 100%; }
+      .header .header-c .nav-m .li-item {
+        float: left;
+        height: 100%;
+        width: 110px;
+        margin-left: 20px;
+        text-align: center;
+        line-height: 80px; }
+        .header .header-c .nav-m .li-item a {
+          position: relative;
+          text-decoration: none;
+          color: #666666; }
+        .header .header-c .nav-m .li-item a:hover {
+          color: #1d1d1d; }
+        .header .header-c .nav-m .li-item a::after {
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          content: "";
+          width: 100%;
+          height: 2px;
+          background-color: #b9ab77;
+          display: none; }
+        .header .header-c .nav-m .li-item .active::after {
+          display: block; }
+        .header .header-c .nav-m .li-item a:hover::after {
+          display: block; }
+    .header .header-c .switch {
+      display: none;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      width: 30px;
+      height: 30px; }
+      .header .header-c .switch .icon {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        transition: all 0.3s linear; }
+        .header .header-c .switch .icon .line {
+          display: block;
+          width: 30px;
+          height: 2px;
+          background-color: #000;
+          transition: all 0.3s linear; }
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+  margin-top: 80px; }
+  .swiper-container .swiper-wrapper {
+    width: 100%;
+    height: 100%; }
+    .swiper-container .swiper-wrapper .swiper-slide img {
+      width: 100%; }
+  .swiper-container .swiper-button-prev {
+    left: 15%;
+    background-color: gray;
+    width: 50px;
+    height: 80px;
+    color: #dfd8da; }
+  .swiper-container .swiper-button-next {
+    right: 15%;
+    background-color: gray;
+    width: 50px;
+    height: 80px;
+    color: #dfd8da; }
+
+.content {
+  width: 100%;
+  height: auto; }
+  .content .wedding {
+    position: relative;
+    margin-top: 100px;
+    height: auto;
+    width: 100%; }
+    .content .wedding .wedding-c {
+      position: relative;
+      width: 1200px;
+      height: 100%;
+      margin: 0 auto; }
+      .content .wedding .wedding-c .title {
+        text-align: center; }
+        .content .wedding .wedding-c .title .title-c {
+          color: #444444;
+          font-size: 26px;
+          padding-bottom: 8px; }
+        .content .wedding .wedding-c .title .title-e {
+          color: #c1c1c1;
+          font-size: 16px; }
+      .content .wedding .wedding-c .weddingSwiper.swiper-container {
+        width: 100%;
+        height: 360px;
+        margin-top: 153px; }
+        .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide {
+          width: 100%;
+          height: 100%; }
+          .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide ul {
+            width: 100%;
+            height: 100%; }
+            .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide ul .item {
+              position: relative;
+              float: left;
+              width: 270px;
+              height: 100%;
+              margin-right: 40px; }
+              .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide ul .item img {
+                width: 100%;
+                height: 100%;
+                filter: grayscale(100%); }
+              .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide ul .item .mask {
+                opacity: 0;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                text-align: center;
+                color: #fff;
+                transition: all 0.6s ease-in-out; }
+                .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide ul .item .mask h3 {
+                  margin: 120px 0 30px 0;
+                  font-size: 14px; }
+                .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide ul .item .mask p {
+                  line-height: 24px;
+                  font-size: 12px; }
+            .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide ul .item:hover > img {
+              filter: grayscale(0%); }
+            .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide ul .item:hover > .mask {
+              opacity: 1; }
+            .content .wedding .wedding-c .weddingSwiper.swiper-container .swiper-wrapper .swiper-slide ul .right {
+              margin: 0; }
+      .content .wedding .wedding-c .weddingPagination {
+        width: 100%;
+        top: 100px;
+        background-color: #fff;
+        text-align: center;
+        color: #000; }
+        .content .wedding .wedding-c .weddingPagination .swiper-pagination-bullet {
+          width: 100px;
+          height: 30px;
+          border-radius: 0%;
+          background: #fff;
+          margin: 0px 30px;
+          opacity: 1;
+          outline: none; }
+        .content .wedding .wedding-c .weddingPagination .swiper-pagination-bullet-active {
+          color: #b9ab77;
+          background-color: #fff; }
+        .content .wedding .wedding-c .weddingPagination .swiper-pagination-bullet-active::after {
+          content: '';
+          display: block;
+          margin: 10px auto;
+          width: 4px;
+          height: 4px;
+          background-color: currentColor;
+          border-radius: 50%; }
+      .content .wedding .wedding-c .more {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        width: 100%;
+        height: 65px; }
+        .content .wedding .wedding-c .more a {
+          display: block;
+          width: 148px;
+          height: 43px;
+          border: 2px solid #f5f5f5;
+          margin: 0 auto;
+          text-decoration: none;
+          line-height: 43px;
+          text-align: center; }
+        .content .wedding .wedding-c .more a:hover {
+          border: 2px solid #b9ab77;
+          color: #b9ab77; }
+  .content .jewelry {
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9; }
+    .content .jewelry .jewelry-c {
+      width: 1200px;
+      margin: 0 auto;
+      height: 100%; }
+      .content .jewelry .jewelry-c .title {
+        padding-top: 100px;
+        text-align: center; }
+        .content .jewelry .jewelry-c .title .title-c {
+          color: #444444;
+          font-size: 26px;
+          padding-bottom: 8px; }
+        .content .jewelry .jewelry-c .title .title-e {
+          color: #c1c1c1;
+          font-size: 16px; }
+      .content .jewelry .jewelry-c .jewelryImgs {
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between; }
+        .content .jewelry .jewelry-c .jewelryImgs .item {
+          position: relative;
+          float: left;
+          z-index: 2; }
+          .content .jewelry .jewelry-c .jewelryImgs .item .item-text {
+            opacity: 0;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 60px;
+            text-indent: 1em;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            transition: all 0.6s ease-in-out; }
+            .content .jewelry .jewelry-c .jewelryImgs .item .item-text h3 {
+              font-size: 14px;
+              color: #ffffff; }
+            .content .jewelry .jewelry-c .jewelryImgs .item .item-text p {
+              font-size: 12px;
+              color: #c1c1c1;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis; }
+          .content .jewelry .jewelry-c .jewelryImgs .item img:hover + .item-text {
+            opacity: 1; }
+      .content .jewelry .jewelry-c .more {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        width: 100%;
+        height: 65px; }
+        .content .jewelry .jewelry-c .more a {
+          display: block;
+          width: 148px;
+          height: 43px;
+          border: 2px solid #f5f5f5;
+          margin: 0 auto;
+          text-decoration: none;
+          line-height: 43px;
+          text-align: center; }
+        .content .jewelry .jewelry-c .more a:hover {
+          border: 2px solid #b9ab77;
+          color: #b9ab77; }
+  .content .activity {
+    width: 100%;
+    height: auto;
+    background: url(../imgs/activities-bg.jpg) no-repeat center 208px; }
+    .content .activity .activity-c {
+      width: 1200px;
+      margin: 0 auto; }
+      .content .activity .activity-c .title {
+        padding-top: 100px;
+        text-align: center; }
+        .content .activity .activity-c .title .title-c {
+          color: #444444;
+          font-size: 26px;
+          padding-bottom: 8px; }
+        .content .activity .activity-c .title .title-e {
+          color: #c1c1c1;
+          font-size: 16px; }
+      .content .activity .activity-c .activity-list {
+        margin-top: 220px;
+        width: 100%;
+        height: 350px;
+        display: flex; }
+        .content .activity .activity-c .activity-list li {
+          width: 300px;
+          height: 350xp;
+          position: relative; }
+          .content .activity .activity-c .activity-list li img {
+            width: 100%;
+            height: 100%; }
+          .content .activity .activity-c .activity-list li .info {
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 95%;
+            height: 95%;
+            background: #ffffffe5;
+            color: #8b8b8b;
+            transition: all 0.3s ease-in-out; }
+            .content .activity .activity-c .activity-list li .info h3 {
+              margin: 45px 40px;
+              font-size: 30px; }
+              .content .activity .activity-c .activity-list li .info h3 font {
+                font-size: 14px; }
+            .content .activity .activity-c .activity-list li .info h4 {
+              margin-left: 40px;
+              font-size: 16px;
+              color: #000;
+              font-weight: bolder; }
+            .content .activity .activity-c .activity-list li .info p {
+              margin: 15px 0px 55px 40px;
+              font-size: 13px;
+              height: 30px;
+              width: 210px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis; }
+            .content .activity .activity-c .activity-list li .info a {
+              margin-left: 40px;
+              text-decoration: none; }
+          .content .activity .activity-c .activity-list li .info:hover {
+            opacity: 1;
+            width: 100%;
+            height: 100%; }
+      .content .activity .activity-c .more {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        width: 100%;
+        height: 65px; }
+        .content .activity .activity-c .more a {
+          display: block;
+          width: 148px;
+          height: 43px;
+          border: 2px solid #f5f5f5;
+          margin: 0 auto;
+          text-decoration: none;
+          line-height: 43px;
+          text-align: center; }
+        .content .activity .activity-c .more a:hover {
+          border: 2px solid #b9ab77;
+          color: #b9ab77; }
+  .content .designers {
+    width: 100%;
+    height: auto;
+    background-color: #3d3d3d; }
+    .content .designers .designers-c {
+      width: 1200px;
+      margin: 0 auto; }
+      .content .designers .designers-c .title {
+        padding-top: 100px;
+        text-align: center; }
+        .content .designers .designers-c .title .title-c {
+          color: #f7f5f5;
+          font-size: 26px;
+          padding-bottom: 8px; }
+        .content .designers .designers-c .title .title-e {
+          color: #c1c1c1;
+          font-size: 16px; }
+      .content .designers .designers-c .designers-list {
+        width: 100%;
+        height: 450px;
+        margin-top: 60px;
+        display: flex; }
+        .content .designers .designers-c .designers-list li {
+          width: 400px; }
+          .content .designers .designers-c .designers-list li .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 100%;
+            background: url(../imgs/designer-1.jpg) no-repeat center;
+            margin: 0 auto; }
+          .content .designers .designers-c .designers-list li .name {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #f7f5f5;
+            text-align: center; }
+          .content .designers .designers-c .designers-list li .position {
+            font-size: 12px;
+            color: #b9b9b9;
+            text-align: center; }
+          .content .designers .designers-c .designers-list li .info {
+            margin: 20px  auto  50px  auto;
+            font-size: 12px;
+            color: #b9b9b9;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 277px; }
+          .content .designers .designers-c .designers-list li a {
+            display: block;
+            text-decoration: none;
+            line-height: 50px;
+            text-align: center;
+            font-size: 12px;
+            color: #bbbaba;
+            width: 150px;
+            height: 50px;
+            border-bottom: 1px solid #bbbaba;
+            margin: 0 auto; }
+          .content .designers .designers-c .designers-list li a:hover {
+            color: #fff;
+            border-bottom: 1px solid #fff; }
+        .content .designers .designers-c .designers-list li:nth-child(2) .avatar {
+          background: url(../imgs/designer-2.jpg) no-repeat center; }
+        .content .designers .designers-c .designers-list li:nth-child(3) .avatar {
+          background: url(../imgs/designer-3.jpg) no-repeat center; }
+          
+
+.footer {
+  width: 100%;
+  height: 100px; }
+  .footer .footer-c {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #323232;
+    overflow: hidden; }
+    .footer .footer-c .left {
+      height: 100%; }
+      .footer .footer-c .left p:nth-child(1) {
+        margin: 40px 0 13px; }
+      .footer .footer-c .left p:nth-child(2) {
+        margin: 13px 0 18px; }
+    .footer .footer-c .right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%; }
+      .footer .footer-c .right li {
+        float: left;
+        height: 100%;
+        line-height: 100px;
+        margin-left: 58px; }
+        .footer .footer-c .right li a {
+          text-decoration: none;
+          color: #323232; }
+    .footer .footer-c .goTop {
+      display: none;
+      position: fixed;
+      right: 252px;
+      bottom: 100px;
+      width: 50px;
+      height: 10px; }
+      .footer .footer-c .goTop .arrow {
+        display: block;
+        width: 48px;
+        height: 48px;
+        border: 1px solid #ccc;
+        background: #E8E8E8 url(../imgs/toup-icon.png) no-repeat center; }
+      .footer .footer-c .goTop .arrow:hover {
+        cursor: pointer; }
+      .footer .footer-c .goTop .tel {
+        display: block;
+        width: 48px;
+        height: 48px;
+        border: 1px solid #ccc;
+        border-top: none;
+        background: #E8E8E8 url(../imgs/phone-icon.png) no-repeat center; }
+        .loading {
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 999;
+          background:  #fff url(../imgs/loding.gif) no-repeat  center;
+      }
+
+/*# sourceMappingURL=style.css.map */
